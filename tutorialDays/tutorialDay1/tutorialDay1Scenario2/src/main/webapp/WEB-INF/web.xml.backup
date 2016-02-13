@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app metadata-complete="true" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <display-name>Scenario 2
+		In a server application (application deployed
+		in server e.g Tomcat).
+		Accessed service via remoting from client
+		program (e.g swing app)
+		Web Application				
+	</display-name>
+<!-- 	please see org.springframework.demo.config.MyWebAppInitializer  -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+            /WEB-INF/spring/application-context.xml           
+        </param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+ 	<servlet> 
+		<servlet-name>TestServlet</servlet-name> 
+ 		<servlet-class>org.springframework.demo.servlet.TestServlet</servlet-class> 
+ 	</servlet> 
+ 	<servlet-mapping>  
+ 		<servlet-name>TestServlet</servlet-name>
+ 		<url-pattern>/testServlet</url-pattern> 
+ 	</servlet-mapping>  
+</web-app>
