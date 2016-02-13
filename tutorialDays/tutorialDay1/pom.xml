@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.springframework.demo</groupId>
+	<artifactId>tutorialDay1</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<description>
+	tutorialDay1
+	</description>
+	<name>tutorialDay1</name>
+	<url>http://maven.apache.org</url>
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>robert0714</id>
+			<name>Robert Lee</name>
+			<email>robert0714@gmail.com</email>
+			<url>https://github.com/robert0714</url>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+8</timezone>
+		</developer>
+	</developers>
+    <modules>
+        <module>tutorialDay1Scenario1</module>
+		<module>tutorialDay1Scenario2</module>
+        <module>tutorialDay1Scenario3</module>
+        <module>tutorialDay1Scenario4</module>		
+    </modules>
+</project>
