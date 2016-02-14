@@ -30,5 +30,8 @@
 			<timezone>+8</timezone>
 		</developer>
 	</developers>
-    
+	 <modules>
+        <module>tutorialDay2-calendar-0</module> 
+    </modules>
+   
 </project>
