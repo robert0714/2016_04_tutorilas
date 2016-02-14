@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.springframework.demo</groupId>
-	<artifactId>tutorialDays</artifactId>
+	<artifactId>tutorialDay2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<description>
-	tutorialDays
+	tutorialDay2
 	</description>
-	<name>tutorialDays</name>
+	<name>tutorialDay2</name>
 	<url>http://maven.apache.org</url>
 	<licenses>
 		<license>
@@ -30,8 +30,5 @@
 			<timezone>+8</timezone>
 		</developer>
 	</developers>
-    <modules>
-        <module>tutorialDay1</module>
-        <module>tutorialDay2</module>
-    </modules>
+    
 </project>
