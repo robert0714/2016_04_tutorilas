@@ -49,8 +49,8 @@
 		</plugins>
 	</build>
 	<properties>
-		<spring.version>4.2.4.RELEASE</spring.version>
-		<spring.security.version>4.0.3.RELEASE</spring.security.version>
+		<spring.version>4.2.5.RELEASE</spring.version>
+		<spring.security.version>4.0.4.RELEASE</spring.security.version>
 		<jackson.version>2.5.4</jackson.version>
 		<m2eclipse.wtp.contextRoot>calendar</m2eclipse.wtp.contextRoot>
 		<project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
