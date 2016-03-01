@@ -2,7 +2,7 @@
 <class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="org.springframework.security.demo.web.controllers.SignupController" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/web/controllers/SignupController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1451" y="443"/>    
@@ -13,7 +13,7 @@
     </display>  
   </class>  
   <class id="2" language="java" name="org.springframework.security.demo.web.controllers.EventsController" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/web/controllers/EventsController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1008" y="505"/>    
@@ -24,7 +24,7 @@
     </display>  
   </class>  
   <interface id="3" language="java" name="org.springframework.security.demo.service.CalendarService" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/service/CalendarService.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1449" y="111"/>    
@@ -35,7 +35,7 @@
     </display>  
   </interface>  
   <interface id="4" language="java" name="org.springframework.security.demo.service.UserContext" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/service/UserContext.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="999" y="149"/>    
@@ -46,7 +46,7 @@
     </display>  
   </interface>  
   <class id="5" language="java" name="org.springframework.security.demo.service.DefaultCalendarService" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/service/DefaultCalendarService.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="354" y="483"/>    
@@ -57,7 +57,7 @@
     </display>  
   </class>  
   <class id="6" language="java" name="org.springframework.security.demo.service.UserContextStub" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/service/UserContextStub.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="690" y="401"/>    
@@ -68,7 +68,7 @@
     </display>  
   </class>  
   <class id="7" language="java" name="org.springframework.security.demo.service.SpringSecurityUserContext" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/service/SpringSecurityUserContext.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1031" y="-17"/>    
@@ -79,7 +79,7 @@
     </display>  
   </class>  
   <class id="8" language="java" name="org.springframework.security.demo.dataaccess.JdbcCalendarUserDao" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/dataaccess/JdbcCalendarUserDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="260" y="10"/>    
@@ -91,7 +91,7 @@
   </class>  
   <class id="9" language="java" 
     name="org.springframework.security.demo.dataaccess.JdbcCalendarUserDao.CalendarUserRowMapper" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/dataaccess/JdbcCalendarUserDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="186" y="295"/>    
@@ -102,7 +102,7 @@
     </display>  
   </class>  
   <class id="10" language="java" name="org.springframework.security.demo.dataaccess.JdbcEventDao" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/dataaccess/JdbcEventDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="575" y="2"/>    
@@ -113,7 +113,7 @@
     </display>  
   </class>  
   <interface id="11" language="java" name="org.springframework.security.demo.dataaccess.EventDao" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/dataaccess/EventDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="729" y="189"/>    
@@ -124,7 +124,7 @@
     </display>  
   </interface>  
   <interface id="12" language="java" name="org.springframework.security.demo.dataaccess.CalendarUserDao" 
-    project="tutorialDay2-calendar-ch4-0" 
+    project="tutorialDay2-calendar-ch4-1" 
     file="/tutorialDay2-calendar-ch4-1/src/main/java/org/springframework/security/demo/dataaccess/CalendarUserDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="444" y="207"/>    
