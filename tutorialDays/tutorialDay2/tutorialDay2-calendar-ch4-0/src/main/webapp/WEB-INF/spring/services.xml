@@ -17,8 +17,7 @@
     <tx:annotation-driven />
 
     <jdbc:embedded-database id="dataSource" type="H2">
-        <jdbc:script location="classpath:/database/h2/calendar-schema.sql"/>
-        <jdbc:script location="classpath:/database/h2/calendar-data.sql"/>
+         
     </jdbc:embedded-database>
 
     <bean id="transactionManager"
