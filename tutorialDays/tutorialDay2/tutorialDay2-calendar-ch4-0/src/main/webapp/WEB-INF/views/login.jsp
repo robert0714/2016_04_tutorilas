@@ -27,6 +27,7 @@
     <input type="password" id="password" name="password"/>
     <div class="form-actions">
         <input id="submit" class="btn" name="submit" type="submit" value="Login"/>
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
     </div>
 </form>
 <jsp:include page="./includes/footer.jsp"/>

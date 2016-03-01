@@ -38,6 +38,7 @@
             <div class="controls">
                 <input id="submit" type="submit" value="Create"/>
                 <input id="auto" type="submit" name="auto" value="Auto Populate Form"/>
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
             </div>
         </div>
     </fieldset>

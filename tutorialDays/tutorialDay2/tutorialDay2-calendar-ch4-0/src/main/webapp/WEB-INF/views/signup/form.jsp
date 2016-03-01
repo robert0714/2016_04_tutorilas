@@ -20,6 +20,7 @@
         <form:password path="password" id="password"/>
         <div>
             <input id="submit" type="submit" value="Create Account"/>
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
         </div>
     </fieldset>
 </form:form>
