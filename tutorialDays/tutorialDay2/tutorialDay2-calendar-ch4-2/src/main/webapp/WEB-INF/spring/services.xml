@@ -21,9 +21,8 @@
         <jdbc:script location="classpath:/database/h2/calendar-data.sql"/>
         <jdbc:script location="classpath:/database/h2/security-schema.sql"/>
         <jdbc:script location="classpath:/database/h2/security-users.sql"/>
-        <jdbc:script location="classpath:/database/h2/security-user-authorities.sql"/> 
-        <jdbc:script location="classpath:/database/h2/security-groups-schema.sql"/> 
-        <jdbc:script location="classpath:/database/h2/security-user-authorities.sql"/>        
+        <jdbc:script location="classpath:/database/h2/security-groups-schema.sql"/>
+        <jdbc:script location="classpath:/database/h2/security-groups-mappings.sql"/>     
     </jdbc:embedded-database>
 
     <bean id="transactionManager"
