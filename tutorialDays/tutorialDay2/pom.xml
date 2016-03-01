@@ -33,7 +33,8 @@
 	 <modules>
         <module>tutorialDay2-calendar-ch3-0</module>
         <module>tutorialDay2-calendar-ch4-0</module> 
-        <module>tutorialDay2-calendar-ch4-1</module> 
+        <module>tutorialDay2-calendar-ch4-1</module>
+        <module>tutorialDay2-calendar-ch4-2</module> 
     </modules>
    
 </project>
