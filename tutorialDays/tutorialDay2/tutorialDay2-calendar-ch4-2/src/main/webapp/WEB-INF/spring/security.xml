@@ -35,33 +35,17 @@
                 logout-success-url="/login/form?logout"/>
     </http>
     
-<!--     <authentication-manager> -->
-<!--         <authentication-provider>         -->
-<!--             <jdbc-user-service id="userDetailsService"   -->
-<!--             data-source-ref="dataSource"  -->
-<!--            group-authorities-by-username-query= -->
-<!--                 "select g.id, g.group_name, ga.authority  -->
-<!--                  from groups g, group_members gm, group_authorities ga  -->
-<!--                  where gm.username = ?  -->
-<!--                  and g.id = ga.group_id and g.id = gm.group_id"   />              -->
-<!--         </authentication-provider> -->
-<!--     </authentication-manager> -->
-
-
-	 <authentication-manager>
-        <authentication-provider  user-service-ref="userDetailsService">
+    <authentication-manager>
+        <authentication-provider>        
+            <jdbc-user-service id="userDetailsService"  
+            data-source-ref="dataSource" 
+           group-authorities-by-username-query=
+                "select g.id, g.group_name, ga.authority 
+                   from groups g, group_members gm, group_authorities ga  
+                   where gm.username = ?  
+                   and g.id = ga.group_id and g.id = gm.group_id"   />              
         </authentication-provider>
     </authentication-manager>
-      
-    <bean:bean id="userDetailsService"    
-    	class="org.springframework.security.provisioning.JdbcUserDetailsManager" >
-           <bean:property name="dataSource"  ref="dataSource"/>
-           <bean:property name="groupAuthoritiesSql" 
-           value="select g.id, g.group_name, ga.authority 
-           from groups g, group_members gm, group_authorities ga 
-           where gm.username = ? 
-           and g.id = ga.group_id 
-           and g.id = gm.group_id" />
-	</bean:bean> 
+ 
     
 </bean:beans>
