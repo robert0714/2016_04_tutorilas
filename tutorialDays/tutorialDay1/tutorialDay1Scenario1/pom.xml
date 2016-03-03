@@ -101,7 +101,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>org.springframework.demo.swinng.App</mainClass>
+							<mainClass>org.springframework.demo.swing.App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
