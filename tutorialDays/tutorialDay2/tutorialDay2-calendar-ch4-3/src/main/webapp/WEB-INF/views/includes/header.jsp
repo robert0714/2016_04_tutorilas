@@ -42,12 +42,9 @@
                         <sec:authorize access="authenticated" var="authenticated"/>
                         <c:choose>
                             <c:when test="${authenticated}">
+                        	
                                 <li id="greeting"><div>Welcome <sec:authentication property="name" /></div></li>
-                               <c:url var="logoutUrl" value="/logout"/>
-                                <form id="logout" action="${logoutUrl}" method="post" >
- 									 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-								</form>
-                                <li><a id="navLogoutLink" href="javascript:document.getElementById('logout').submit()">Logout</a></li>
+                                <li><a id="navLogoutLink" href="javascript:document.getElementById('logout').submit()">Logout</a></li>                                
                             </c:when>
                             <c:otherwise>
                                 <c:url var="signupUrl" value="/signup/form"/>
@@ -60,7 +57,12 @@
                 </div>
             </div>
         </div>
-
+        <div>
+       		<c:url var="logoutUrl" value="/logout"/>
+			<form id="logout" action="${logoutUrl}" method="post" >
+ 				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+			</form>
+        </div>
     </div>
 
     <div class="container">
