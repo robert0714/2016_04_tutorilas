@@ -42,7 +42,7 @@
                         <sec:authorize access="authenticated" var="authenticated"/>
                         <c:choose>
                             <c:when test="${authenticated}">
-                            	
+                        	
                                 <li id="greeting"><div>Welcome <sec:authentication property="name" /></div></li>
                                 <li><a id="navLogoutLink" href="javascript:document.getElementById('logout').submit()">Logout</a></li>                                
                             </c:when>
