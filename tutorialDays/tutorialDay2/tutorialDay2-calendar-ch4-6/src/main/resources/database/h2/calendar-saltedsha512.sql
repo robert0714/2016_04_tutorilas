@@ -1,0 +1,3 @@
+update calendar_users set password = '66d2bb423797b36b9007c2df6bb9f5843df605adfb90011541b1886489bcb072f543f650621875cc007ecc5e9cd9a4544e2351d98ba5254a3a6862cadb675da0' where email = 'user1@example.com';
+update calendar_users set password = 'eab2c006f4d0fceae21c235f05acb4a724856e7d9d8502fe7922333d35d9a5549a607f54e6740c45abaa6db90da001deafbe77c45b31f5d7389cc087f1d0452f' where email = 'admin1@example.com';
+update calendar_users set password = '6e473ea30a584d372aeb045a955e3838a9138cd5795ce55db243dcedb0c377aae395bd732d9c0c1b37830974ff479d74c6b85e253c20230b47d52e4226241184' where email = 'user2@example.com';
