@@ -2,7 +2,8 @@ package org.springframework.security.demo.domain;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+ 
 
 /**
  * {@link CalendarUser} is this applications notion of a user. It is good to use your own objects to interact with a

@@ -40,7 +40,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * By setting <a href=
  * "http://static.springsource.org/spring-security/site/docs/3.1.x/reference/appendix-namespace.html#nsa-form-login-always-use-default-target"
  * >always-use-default-target</a> to true, Spring Security will always send the user to this page and thus the first page
- * after login will always differ by role.
+ * after login will always differ
+import org.springframework.security.core.userdetails.UserDetailsService; by role.
  * </p>
  *
  * <pre>
