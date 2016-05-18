@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <context:component-scan base-package="org.springframework.security.demo">
-        <context:exclude-filter type="regex" expression="org.springframework.security.demo.web.*"/>
+        <context:exclude-filter type="regex" expression="org.springframework.security.demo.web.(config|controllers).*"/>
     </context:component-scan>
 
     <tx:annotation-driven />
@@ -19,6 +19,8 @@
     <jdbc:embedded-database id="dataSource" type="H2">
         <jdbc:script location="classpath:/database/h2/calendar-schema.sql"/>
         <jdbc:script location="classpath:/database/h2/calendar-data.sql"/>
+        <jdbc:script location="classpath:/database/h2/security-metadata-schema.sql"/>
+        <jdbc:script location="classpath:/database/h2/security-metadata-data.sql"/>
     </jdbc:embedded-database>
 
     <bean id="transactionManager"

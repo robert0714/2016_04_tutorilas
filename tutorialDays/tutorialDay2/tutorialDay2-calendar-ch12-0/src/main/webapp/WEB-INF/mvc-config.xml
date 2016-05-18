@@ -9,9 +9,9 @@
 		http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<mvc:annotation-driven />
+    <mvc:annotation-driven />
 
-	 <!-- Load org.springframework.security.demo.web.config.WebMvcConfig -->
+	<!-- Load com.packtpub.springsecurity.web.config.WebMvcConfig -->
 	<context:component-scan base-package="org.springframework.security.demo.web.controllers" /> 
 	<mvc:resources location="/resources/" mapping="/resources/**"
 		cache-period="31556926"></mvc:resources>
@@ -32,7 +32,5 @@
 	</bean>
 	<mvc:view-controller path="/login/form" view-name="login" />	
 	<mvc:view-controller path="/errors/403" view-name="/errors/403" />
-
-
 
 </beans>
