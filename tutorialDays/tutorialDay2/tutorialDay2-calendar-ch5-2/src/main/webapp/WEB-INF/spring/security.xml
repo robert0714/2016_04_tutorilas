@@ -4,15 +4,13 @@
     xmlns="http://www.springframework.org/schema/security"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
- 
-    <http pattern="/resources/**" security="none"/>
+  
     <http pattern="/admin/h2/**"  security="none" /> 
+    <http pattern="/resources/**" security="none"/>
     <http auto-config="true" use-expressions="true">
         <intercept-url pattern="/"
                 access="permitAll"/>
         <intercept-url pattern="/login/*"
-                access="permitAll"/>
-        <intercept-url pattern="/signup/*"
                 access="permitAll"/>
         <intercept-url pattern="/logout"
                 access="permitAll"/>
@@ -34,16 +32,10 @@
         <logout logout-url="/logout"
                 logout-success-url="/login/form?logout"/>
     </http>
+    <ldap-server id="ldapServer" ldif="classpath:/ldif/calendar.ldif" root="dc=jbcpcalendar,dc=com"/>
     <authentication-manager>
-        <authentication-provider>
-            <user-service>
-                <user name="user1@example.com"
-                        password="user1"
-                        authorities="ROLE_USER"/>
-                <user name="admin1@example.com"
-                        password="admin1"
-                        authorities="ROLE_USER,ROLE_ADMIN"/>
-            </user-service>
-        </authentication-provider>
+        <ldap-authentication-provider server-ref="ldapServer"
+                user-search-filter="(uid={0})"
+                group-search-base="ou=Groups"/>
     </authentication-manager>
 </bean:beans>
