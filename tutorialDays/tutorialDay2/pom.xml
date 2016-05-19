@@ -37,7 +37,12 @@
         <module>tutorialDay2-calendar-ch4-2</module>
         <module>tutorialDay2-calendar-ch4-3</module> 
         <module>tutorialDay2-calendar-ch4-4</module>
-        <module>tutorialDay2-calendar-ch4-5</module> 
+        <module>tutorialDay2-calendar-ch4-5</module>
+        <module>tutorialDay2-calendar-ch5-0</module>
+        <module>tutorialDay2-calendar-ch5-1</module>
+        <module>tutorialDay2-calendar-ch5-2</module>
+        <module>tutorialDay2-calendar-ch12-0</module>
+        <module>tutorialDay2-calendar-ch12-1</module>
     </modules>
    
 </project>
