@@ -5,7 +5,7 @@
 	<groupId>org.springframework.demo</groupId>
 	<artifactId>tutorialDay1Scenario4</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<description>
 	Scenario 4
 In web application with spring MVC. springweb-servlet.xml for servlet and applicationcontext.xml for accessing the business service within the server program or for accessing DB service in another server program.
@@ -45,73 +45,60 @@ The beans are all instantiated from all four test1.xml, test2.xml, test3.xml, te
 		<poi.version>3.13</poi.version>
 		<commons.io.version>2.4</commons.io.version>
 		<junit.version>4.12</junit.version>
+		<jackson.version>2.5.4</jackson.version>
 	</properties>
 	<build>
 		<resources>
 			<resource>
-				<directory>${project.basedir}/src/main/resources</directory>
 				<filtering>true</filtering>
+				<directory>${basedir}/src/main/resources</directory>
 			</resource>
 		</resources>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.0</version>
 				<configuration>
-					<encoding>${project.build.sourceEncoding}</encoding>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
-					<showDeprecation>true</showDeprecation>
-					<showWarnings>true</showWarnings>
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.6</version>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven2-plugin</artifactId>
+				<version>1.4.18</version>
 				<configuration>
-					<nonFilteredFileExtensions>
-						<nonFilteredFileExtension>jks</nonFilteredFileExtension>
-					</nonFilteredFileExtensions>
+					<container>
+						<containerId>tomcat7x</containerId>
+						<zipUrlInstaller>
+							<url>http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.67/bin/apache-tomcat-7.0.67.zip</url>
+						</zipUrlInstaller>
+					</container>
+					<configuration>
+						<home>${project.build.directory}/tomcat7x/container</home>
+						<configfiles>
+							<configfile>
+								<file>${project.build.directory}/classes/tomcat/server.xml</file>
+								<todir>conf</todir>
+							</configfile>
+						</configfiles>
+						<deployables>
+							<deployable>
+								<properties>
+									<context>tutorialDay1Scenario2</context>
+								</properties>
+							</deployable>
+						</deployables>
+					</configuration>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>copy-dependencies</id>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>copy-dependencies</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>target/lib</outputDirectory>
-							<overWriteReleases>false</overWriteReleases>
-							<overWriteSnapshots>false</overWriteSnapshots>
-							<overWriteIfNewer>true</overWriteIfNewer>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>org.springframework.demo.swinng.App</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-
 		</plugins>
 	</build>
 	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
@@ -125,6 +112,11 @@ The beans are all instantiated from all four test1.xml, test2.xml, test3.xml, te
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
@@ -202,6 +194,11 @@ The beans are all instantiated from all four test1.xml, test2.xml, test3.xml, te
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-scratchpad</artifactId>
 			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.jxls</groupId>

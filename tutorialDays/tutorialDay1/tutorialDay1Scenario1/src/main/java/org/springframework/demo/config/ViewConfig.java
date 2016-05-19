@@ -65,7 +65,9 @@ public class ViewConfig {
 	public Locale getLocale(){
 		return  Locale.ENGLISH;
 	}
-	
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	@Bean(name="mainAppFrame")
 	public JFrame buildMainFrame(){		 
 		final String title = 	messageSource.getMessage(TITLE, new Object[]{}, locale);

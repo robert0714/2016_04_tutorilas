@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.demo.config.ViewConfig;
 import org.springframework.demo.swing.util.OSValidator;
 
 import com.jgoodies.looks.windows.WindowsLookAndFeel;
@@ -39,15 +40,25 @@ public class App {
 			}
 		});
 	}
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	private App(ApplicationContext context){
-		this.context = context;
-	}
+		this.context = context; 
+		mainFrame= new JFrame(); 
+		//為了windows builder相容性
+		if ( context != null ){
+			mainFrame = context.getBean("mainAppFrame", JFrame.class);
+		} 
+		
+	} 
+	
 	/**
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
 		settingLook();
-		mainFrame = context.getBean("mainAppFrame", JFrame.class);
+//		mainFrame = context.getBean("mainAppFrame", JFrame.class);
 		mainFrame.setVisible(true);
 	}
 
