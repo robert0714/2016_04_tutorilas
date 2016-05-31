@@ -21,8 +21,7 @@
                 access="permitAll"/>
         <intercept-url pattern="/events/"
                 access="hasRole('ROLE_ADMIN')"/>
-        <intercept-url pattern="/admin/**"
-                access="hasRole('ROLE_ADMIN')" /> 
+       
         <intercept-url pattern="/**"
                 access="hasRole('ROLE_USER')"/>
         <access-denied-handler error-page="/errors/403"/>
@@ -36,15 +35,6 @@
                 logout-success-url="/login/form?logout"/>
     </http>
     <authentication-manager>
-        <authentication-provider>
-            <user-service>
-                <user name="user1@example.com"
-                        password="user1"
-                        authorities="ROLE_USER"/>
-                <user name="admin1@example.com"
-                        password="admin1"
-                        authorities="ROLE_USER,ROLE_ADMIN"/>
-            </user-service>
-        </authentication-provider>
+        <authentication-provider user-service-ref="calendarUserDetailsService"/> 
     </authentication-manager>
 </bean:beans>
