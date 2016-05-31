@@ -36,15 +36,7 @@
                 logout-success-url="/login/form?logout"/>
     </http>
     <authentication-manager>
-        <authentication-provider>
-            <user-service>
-                <user name="user1@example.com"
-                        password="user1"
-                        authorities="ROLE_USER"/>
-                <user name="admin1@example.com"
-                        password="admin1"
-                        authorities="ROLE_USER,ROLE_ADMIN"/>
-            </user-service>
-        </authentication-provider>
+        <authentication-provider  ref="calendarUserAuthenticationProvider" />
+             
     </authentication-manager>
 </bean:beans>
