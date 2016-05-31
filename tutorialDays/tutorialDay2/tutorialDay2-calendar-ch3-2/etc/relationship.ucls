@@ -3,8 +3,8 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" 
     name="org.springframework.security.demo.dataaccess.JdbcCalendarUserDao.CalendarUserRowMapper" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/dataaccess/JdbcCalendarUserDao.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/dataaccess/JdbcCalendarUserDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="182" y="253"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -14,8 +14,8 @@
     </display>  
   </class>  
   <class id="2" language="java" name="org.springframework.security.demo.dataaccess.JdbcEventDao" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/dataaccess/JdbcEventDao.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/dataaccess/JdbcEventDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="636" y="28"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -25,8 +25,8 @@
     </display>  
   </class>  
   <interface id="3" language="java" name="org.springframework.security.demo.dataaccess.EventDao" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/dataaccess/EventDao.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/dataaccess/EventDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="910" y="199"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -36,8 +36,8 @@
     </display>  
   </interface>  
   <interface id="4" language="java" name="org.springframework.security.demo.dataaccess.CalendarUserDao" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/dataaccess/CalendarUserDao.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/dataaccess/CalendarUserDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="556" y="217"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -47,8 +47,8 @@
     </display>  
   </interface>  
   <class id="5" language="java" name="org.springframework.security.demo.dataaccess.JdbcCalendarUserDao" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/dataaccess/JdbcCalendarUserDao.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/dataaccess/JdbcCalendarUserDao.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="290" y="24"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -58,8 +58,8 @@
     </display>  
   </class>  
   <class id="6" language="java" name="org.springframework.security.demo.domain.Event" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/domain/Event.java" binary="false" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/domain/Event.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="153" y="665"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -69,8 +69,8 @@
     </display>  
   </class>  
   <class id="7" language="java" name="org.springframework.security.demo.domain.CalendarUser" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/domain/CalendarUser.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/domain/CalendarUser.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="158" y="404"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -80,8 +80,8 @@
     </display>  
   </class>  
   <class id="8" language="java" name="org.springframework.security.demo.service.SpringSecurityUserContext" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/service/SpringSecurityUserContext.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/service/SpringSecurityUserContext.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1190" y="22"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -91,8 +91,8 @@
     </display>  
   </class>  
   <interface id="9" language="java" name="org.springframework.security.demo.service.UserContext" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/service/UserContext.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/service/UserContext.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1158" y="184"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -102,8 +102,8 @@
     </display>  
   </interface>  
   <class id="10" language="java" name="org.springframework.security.demo.service.DefaultCalendarService" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/service/DefaultCalendarService.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/service/DefaultCalendarService.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="526" y="537"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -113,8 +113,8 @@
     </display>  
   </class>  
   <class id="11" language="java" name="org.springframework.security.demo.service.UserContextStub" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/service/UserContextStub.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/service/UserContextStub.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="884" y="417"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -124,8 +124,8 @@
     </display>  
   </class>  
   <interface id="12" language="java" name="org.springframework.security.demo.service.CalendarService" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/service/CalendarService.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/service/CalendarService.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1645" y="126"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -135,8 +135,8 @@
     </display>  
   </interface>  
   <class id="13" language="java" name="org.springframework.security.demo.web.controllers.SignupController" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/web/controllers/SignupController.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/web/controllers/SignupController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1635" y="496"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -146,8 +146,8 @@
     </display>  
   </class>  
   <class id="14" language="java" name="org.springframework.security.demo.web.controllers.EventsController" 
-    project="tutorialDay2-calendar-ch3-1" 
-    file="/tutorialDay2-calendar-ch3-1/src/main/java/org/springframework/security/demo/web/controllers/EventsController.java" 
+    project="tutorialDay2-calendar-ch3-2" 
+    file="/tutorialDay2-calendar-ch3-2/src/main/java/org/springframework/security/demo/web/controllers/EventsController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1217" y="566"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
