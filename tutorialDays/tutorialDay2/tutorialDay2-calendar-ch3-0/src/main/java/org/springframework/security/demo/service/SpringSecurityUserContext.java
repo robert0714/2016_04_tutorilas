@@ -11,40 +11,46 @@ import org.springframework.security.demo.domain.CalendarUser;
 import org.springframework.stereotype.Component;
 
 /**
- * An implementation of {@link UserContext} that looks up the {@link CalendarUser} using the Spring Security's
- * {@link Authentication} by principal name.
+ * An implementation of {@link UserContext} that looks up the
+ * {@link CalendarUser} using the Spring Security's {@link Authentication} by
+ * principal name.
  *
  * @author Rob Winch
  *
  */
+@Component
 public class SpringSecurityUserContext implements UserContext {
-    private final CalendarService calendarService;
-    private final UserDetailsService userDetailsService;
+	private final CalendarService calendarService;
+	private final UserDetailsService userDetailsService;
 
-    @Autowired
-    public SpringSecurityUserContext(CalendarService calendarService,UserDetailsService userDetailsService) {
-        if (calendarService == null) {
-            throw new IllegalArgumentException("calendarService cannot be null");
-        }
-        if (userDetailsService == null) {
-            throw new IllegalArgumentException("userDetailsService cannot be null");
-        }
-        this.calendarService = calendarService;
-        this.userDetailsService = userDetailsService;
-    }
+	@Autowired
+	public SpringSecurityUserContext(CalendarService calendarService, UserDetailsService userDetailsService) {
+		if (calendarService == null) {
+			throw new IllegalArgumentException("calendarService cannot be null");
+		}
+		if (userDetailsService == null) {
+			throw new IllegalArgumentException("userDetailsService cannot be null");
+		}
+		this.calendarService = calendarService;
+		this.userDetailsService = userDetailsService;
+	}
 
-    /**
-     * Get the {@link CalendarUser} by obtaining the currently logged in Spring Security user's
-     * {@link Authentication#getName()} and using that to find the {@link CalendarUser} by email address (since for our
-     * application Spring Security usernames are email addresses).
-     */
-    @Override
-    public CalendarUser getCurrentUser() {
-        throw new UnsupportedOperationException();
-    }
+	/**
+	 * Get the {@link CalendarUser} by obtaining the currently logged in Spring
+	 * Security user's {@link Authentication#getName()} and using that to find
+	 * the {@link CalendarUser} by email address (since for our application
+	 * Spring Security usernames are email addresses).
+	 */
+	@Override
+	public CalendarUser getCurrentUser() {
+		return calendarService.findUserByEmail(SecurityContextHolder.getContext().getAuthentication().getName());
+	}
 
-    @Override
-    public void setCurrentUser(CalendarUser user) {
-        throw new UnsupportedOperationException();
-    }
+	@Override
+	public void setCurrentUser(CalendarUser user) {
+		UserDetails userDetails = userDetailsService.loadUserByUsername(user.getEmail());
+		Authentication authentication = new UsernamePasswordAuthenticationToken(userDetails, userDetails.getPassword(),
+				userDetails.getAuthorities());
+		SecurityContextHolder.getContext().setAuthentication(authentication);
+	}
 }
