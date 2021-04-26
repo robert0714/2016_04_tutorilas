@@ -43,7 +43,7 @@ The beans are all instantiated from all four test1.xml, test2.xml, test3.xml, te
 		<h2.version>1.4.187</h2.version>
 		<slf4j.log4j.version>1.7.6</slf4j.log4j.version>
 		<poi.version>3.13</poi.version>
-		<commons.io.version>2.4</commons.io.version>
+		<commons.io.version>2.7</commons.io.version>
 		<junit.version>4.12</junit.version>
 		<jackson.version>2.5.4</jackson.version>
 	</properties>
